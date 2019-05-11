@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor do fundo da pagina */
+
+body{
+    background-color: black;
+}
+/* cabeçario da pagina */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 131px;
+}
+/* logo */
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+header div img{
+    padding: 15px;
+
+   
+}
+/*  */
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height:131px ;
+    font-size: 29px;
+  
+
+}
+header nav ul{
+    height: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    
+    
+    
+    
+}
+header nav ul a{ 
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 100%;
+    background-color: black;
+
+
+}
+header nav ul a:hover{
+    background-color: #2A9DA2;
+    transition: .6s
+}
+.azul{
+    background-color: #2A9DA2;
+    
+    
+}
+
+section{
+    background-image: url(./img/background.png);
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+ .texto{
+     font-size: 40px;
+    text-align: center;
+    background-color: rgba(0, 0,0, .6);
+    border: solid rgba(243, 243, 243, 0.5);
+    color: white;
+    padding: 50px 200px;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+footer ul{
+    display: inline;
+    list-style: none;
+    padding: 0 3px;
+    
+}
+footer ul li{
+    display:flex;
+    align-items: center;
+    padding: 3px;
+}
+footer figure img{
+  
+   height: 50px;
+   margin: 11px;
+   
+}
+footer div{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   
+   
+
+}
+footer div img{
+  height: 30px;
+  display: flex;
+  padding: 0 20px;
+  
+
+}
+
+.sumir{
+    display: none;
+}
+.desktop{
+    display: none;
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    cursor: pointer;
+
+}
+.menumobile{
+    position: absolute;
+
+
+}
+label {
+    margin: 0 40px 0 0;
+    line-height: 10px;
+    display: none;
+    width: 60px;
+    height:60px ;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+
+
+@media screen and (max-width:895px){
+.mobile{
+   display: flex;
+   
+}
+.sumirnav{
+    display: none;
+}
+.aparecemeio{
+    background-image: url(./img/editado.png);
+    height:80vh;
+    background-size:100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.textomobile{ 
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0,0, .6);
+    border: solid rgba(243, 243, 243, 0.5);
+    color: white;
+    padding: 50px 50px;
+}
+.footermobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column-reverse;
+    padding-top: 2px;
+}
+.footermobile div{
+    display: flex;
+    justify-content: space-around;
+}
+.footermobile div img{
+    display: flex;
+    justify-content: space-around;
+}
+label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 31px;
+    right: -31px;
+}
+.menu {
+    text-align: center;
+    width: 100% ;
+    display: none;
+    padding: 0 -10px;
+}
+.nav {
+    display: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+}
+#toggle:checked + .menu {
+    display: block;
+}
+}
